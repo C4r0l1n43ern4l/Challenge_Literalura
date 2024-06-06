@@ -24,22 +24,34 @@ Para poder acceder al proyecto se deben seguir los siguientes paso:
 - `Paquete Principal:` Contiene la clase Principal.java que es la encargada de la lógica del programa (Métodos para mostrar el menú, Consultar Datos en la API, Registrar datos en la BD y consultar información en la BD).
 - `Paquete Repository:` Contiene las dos Interfaces que permitirán realizar el CRUD a la Base de Datos.
 - `Paquete Service:` Contie las clases que para enviar y recibir infromación de la API y posteriormente convertir los datos JSON a una Clase.
+- `Archivo pom.xml:` Contie las dependencias a utilizar (Spring Framework | Jackson Databind 2.17.0 | Spring Data JPA | Postgres 
 ## Abre y ejecuta el proyecto
 - Una vez este abierto el proyecto en el IDE recomendado se debe ejecutar la clase LiteraluraApplication para poder usar la aplicación. Seguidamente empezará a visualizar el menú de opciones en donde podrá digitar la opción que desea como se muestra a continuación:
-- ![menu-opciones](https://github.com/C4r0l1n43ern4l/conversor-de-moneda-challengealle/assets/90581744/a0ad8095-7a2c-4045-890b-3af1e6855b3c)
-- Una vez seleccionada la opción el programa le mostrá un mensaje para que el usuario ingrese el monto de dinero a convertir:
-- ![lectura-entradas](https://github.com/C4r0l1n43ern4l/conversor-de-moneda-challengealle/assets/90581744/5a92895a-34c4-422e-b681-3e19b3e53c10)
-- Seguidamente el programa mostrará el resultado obtenido de la conversión y la fecha y hora de la consulta.
-- ![resultado](https://github.com/C4r0l1n43ern4l/conversor-de-moneda-challengealle/assets/90581744/856e23e4-3653-47bb-87cc-5d4290d9d13d)
-- Si el usuario ingresa una opción no válida el programa le mostrará un mensaje de error y le mostrará nuevamente el menú de opciones.
-- ![opcion-invalida](https://github.com/C4r0l1n43ern4l/conversor-de-moneda-challengealle/assets/90581744/b3c87370-0fee-4fba-a512-79c0042eb3df)
-- Si selecciona la opción de salir el programa le mostrará un ensaje de despedida.
-- ![salida](https://github.com/C4r0l1n43ern4l/conversor-de-moneda-challengealle/assets/90581744/9a94f476-3109-468b-a9f0-36392920dadf)
+![menú](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/3f532a83-3837-4550-ae5f-f077a203b83c)
+- `OPCIÓN 1 Buscar libro por título:` Busca en la API el libro y si no existe en la Base de Datos lo registra con su respectivo Autor.
+![libroRegistrado](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/cfb09309-3f96-4e8e-99ce-afee41d8fd20)
+![libroBD](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/acfdafda-2265-4148-a05d-14a6323dc1f9)
+- NOTA: Si el libro existe no lo registra y envia un mensaje.
+![libroValidado](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/ac5315d6-c260-4a49-975c-6ba0bb4f6362)
+- `OPCIÓN 2 Listar libros registrados:` Muestra la lista de libros registrados en la BD.
+![listaLibros](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/ff0a91c9-4b5e-439c-9d62-c10f540f0a7b)
+- `OPCIÓN 3 Listar Autores registrados:` Muestra la lista de Autores registrados en la BD y ademas se pueden ver su lista de libros.
+![listaAutores](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/8e344ffe-3a78-42e5-96e7-af714b04f796)
+![autorBD](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/e0d7c557-aaf0-4349-a6d5-d89d46ec8ea3)
+- `OPCIÓN 4 Listar Autores vivos en un determinado año:` Filtra los autores que estaban vivos a partir del año ingresado por el usuario.
+![listaAutoresVivos](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/36683c9f-eafd-4f25-a78e-873a5062c6fb)
+- `OPCIÓN 5 Listar libros por idioma:` Filtra los libros registrados en la BD A partir del idioma ingresado por el usuario.
+![listalibroIdioma](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/6e764a73-edea-4b25-9fbf-c19a7ee86127)
+- `OPCIÓN 6 Top 5 de Libros más descargados:` Muestra el top 5 de los libros que cuentan con mpas descargas.
+![top5libros](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/9d48eb5a-1244-4bc5-9c93-a53438d8da2a)
+- `OPCIÓN 0 Salir:` Permite al usuario finilizar la aplicación y salir.
+![salir](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/9d5428a3-3f91-4bc5-8d23-f3220d6c1146)
+
 ## Tecnología Usada
-- La aplicación fue desarrollada con el lenguaje de programación JavaSE17.
-- Se utilizo el IDE IntelliJ.
+- JavaSE17.
+- IDE IntelliJ.
+- Jackson Databind 2.17.0
 - Spring y Postgres
 - API Gutendex (https://gutendex.com/)
-- Se utilizaron las clases HttpClient, HttpRequest y la interfaz HttpResponse, para crear el cliente, realizar la solicitud y obtener los datos necesarios para realizar una conversión.
 ## Autor
 - Alba Carolina Bernal Carreño
