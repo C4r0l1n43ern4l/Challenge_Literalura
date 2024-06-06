@@ -24,7 +24,8 @@ Para poder acceder al proyecto se deben seguir los siguientes paso:
 - `Paquete Principal:` Contiene la clase Principal.java que es la encargada de la lógica del programa (Métodos para mostrar el menú, Consultar Datos en la API, Registrar datos en la BD y consultar información en la BD).
 - `Paquete Repository:` Contiene las dos Interfaces que permitirán realizar el CRUD a la Base de Datos.
 - `Paquete Service:` Contie las clases que para enviar y recibir infromación de la API y posteriormente convertir los datos JSON a una Clase.
-- `Archivo pom.xml:` Contie las dependencias a utilizar (Spring Framework | Jackson Databind 2.17.0 | Spring Data JPA | Postgres 
+- `Archivo pom.xml:` Contie las dependencias a utilizar (Spring Framework | Jackson Databind 2.17.0 | Spring Data JPA | Postgres.
+  
 ## Abre y ejecuta el proyecto
 - Una vez este abierto el proyecto en el IDE recomendado se debe ejecutar la clase LiteraluraApplication para poder usar la aplicación. Seguidamente empezará a visualizar el menú de opciones en donde podrá digitar la opción que desea como se muestra a continuación:
 ![menú](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/3f532a83-3837-4550-ae5f-f077a203b83c)
