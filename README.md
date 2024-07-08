@@ -1,5 +1,8 @@
 # Challenge_Literalura
 
+![badge literalura](https://github.com/C4r0l1n43ern4l/Challenge_Literalura/assets/90581744/932596b1-b28f-47c0-85b0-a9758d0253c4)
+
+
 Este es un programa que fue desarrollado como el segundo Challenger propuesto por Alura - G6 en la especialización de Backend. 
 El programa consiste en un catálogo de libros, en donde el usuario puede registrar libros en una Base de Datos y recibir información acerca de los libros registrados.
 El desafio está enfocado en el consumo de una API y la persistencia de datos.
